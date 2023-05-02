@@ -1,24 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import MyModal from 'sample-modal-v2/dist/Modal';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MyModal trigger={<button>준의 모달</button>}>
+      <div>성공!</div>
+      <div>완성!</div>
+    </MyModal>
   );
 }
 
